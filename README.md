@@ -50,3 +50,4 @@ Multiple users can draw simultaneously on the same shared canvas with **real-tim
 
 ## 📁 Folder Structure
 
+<img width="232" height="480" alt="image" src="https://github.com/user-attachments/assets/a386413d-9c30-4f29-b80a-ba9f61d4ec9e" />

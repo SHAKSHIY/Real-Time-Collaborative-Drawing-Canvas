@@ -75,7 +75,7 @@ It consists of:
 
 ## State Management
 Each room maintains:
-```js
+
 {
   users: [{ id, name, color }],
   drawing: {
@@ -83,3 +83,48 @@ Each room maintains:
     redoStack: []
   }
 }
+
+
+## Scalability Considerations
+
+- Multiple rooms supported via roomId.
+
+- Can persist drawings using a database (MongoDB, Redis, or Postgres).
+
+- Load balancing via namespaces or Redis adapter for 1000+ concurrent users.
+
+## Key Design Choices
+
+- Authoritative server state ensures global undo/redo integrity.
+
+- Client-side prediction renders strokes immediately for responsiveness.
+
+- Socket.io namespaces easily support multiple canvas sessions.
+
+- Minimal dependencies — only Express and Socket.io used.
+
+## Future Improvements
+
+- Persistent storage (Redis / MongoDB)
+
+- Clear canvas & Save as PNG
+
+- Role-based user permissions
+
+- Latency indicator (ms delay between clients)
+
+- Export session replay
+
+## Summary
+
+This architecture ensures:
+
+- Real-time, low-latency drawing sync
+
+-  Smooth multi-user collaboration
+
+- Robust undo/redo across sessions
+
+- Modular, extendable codebase for production use
+
+### Designed & developed by Shakshi Yadav (IIT Patna)

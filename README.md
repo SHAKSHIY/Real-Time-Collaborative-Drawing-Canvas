@@ -59,8 +59,8 @@ Multiple users can draw simultaneously on the same shared canvas with **real-tim
 
 ### 1️. Clone the repository
 
-git clone https://github.com/SHAKSHIY/Real-Time-Collaborative-Drawing-Canvas.git
-cd collaborative-canvas
+- git clone https://github.com/SHAKSHIY/Real-Time-Collaborative-Drawing-Canvas.git
+- cd collaborative-canvas
 
 ### 2. Install dependencies
 
@@ -94,5 +94,5 @@ To test multi-user functionality:
 
 ## Author
 
-Shakshi Yadav
+**Shakshi Yadav**
 B.Tech, IIT Patna

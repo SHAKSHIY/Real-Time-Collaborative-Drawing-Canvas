@@ -58,16 +58,16 @@ Multiple users can draw simultaneously on the same shared canvas with **real-tim
 ## ⚙️ Setup & Installation
 
 ### 1️. Clone the repository
-```bash
+
 git clone https://github.com/SHAKSHIY/Real-Time-Collaborative-Drawing-Canvas.git
 cd collaborative-canvas
 
 ### 2. Install dependencies
-```bash
+
 npm install
 
 ### 3. Run the server
-```bash
+
 npm start
 
 ### 4. Open the app

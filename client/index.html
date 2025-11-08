@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collaborative Canvas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="toolbar">
+    <input type="color" id="color" value="#000000" />
+    <input type="range" id="width" min="1" max="20" value="4" />
+    <button id="eraser">🧽</button>
+    <button id="undo">↩️</button>
+    <button id="redo">↪️</button>
+  </div>
+
+  <canvas id="canvas"></canvas>
+  <div id="cursor-container"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

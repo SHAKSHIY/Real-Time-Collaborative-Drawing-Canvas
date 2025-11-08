@@ -20,25 +20,13 @@ It consists of:
 
 ## Data Flow Diagram
 
-[ User Action ]
-│
-▼
-[ Canvas Events ] → (client/canvas.js)
-│
-▼
-[ Socket.io emit ] → start_stroke / stroke_segment / end_stroke
-│
-▼
+[ User Action ] ->
+[ Canvas Events ] → (client/canvas.js) ->
+[ Socket.io emit ] → start_stroke / stroke_segment / end_stroke ->
 [ Server (server.js) ]
-│
 ├─ updates DrawingState (rooms.js + drawing-state.js)
-│
-└─ broadcasts → stroke_segment / stroke / cursor / full_state
-│
-▼
-[ Other Clients receive update ]
-│
-▼
+─ broadcasts → stroke_segment / stroke / cursor / full_state ->
+[ Other Clients receive update ] ->
 [ Draw live updates on Canvas ]
 
 
